@@ -1,0 +1,155 @@
+/* ===== NAVBAR ===== */
+*{
+  margin: 0;
+}
+.navbar {
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background: #1e1e2f;
+  color: #fff;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* ===== PAGE CONTENT STYLES ===== */
+.page {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.page h1 {
+  margin-bottom: 15px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  margin-top: 15px;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+}
+
+.btn {
+  padding: 10px 16px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+
+/* ===== SIDEBAR LAYOUT ===== */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Navbar stays on top */
+/* .navbar {
+  
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+} */
+
+/* Container holds sidebar + content horizontally */
+.container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 60px);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #2b2b40;
+  color: #fff;
+  padding-top: 20px;
+  left: 0;
+  top: 100px;             /* Below navbar */
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+/* Content area */
+.content {
+  margin-left: 250px;   /* Push it right */
+  padding: 20px;
+  width: calc(100% - 250px);
+}
+
+.sidebar-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Menu layout */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 8px;
+}
+
+/* Each link */
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 10px;
+  color: #d0d0e6;
+  text-decoration: none;
+  transition: 0.25s ease;
+  font-size: 15px;
+}
+
+.sidebar-link .icon {
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+/* Hover effect */
+.sidebar-link:hover {
+  background: #2b2b40;
+  color: white;
+}
+
+/* Active link */
+.sidebar-link.active {
+  background: #4c4cff;
+  color: white;
+}
+
+.ff{
+  height: 70px;
+  background-color: #1e1e2f;
+  text-align: center;
+  padding-top: 0.8rem;
+  color: #d0d0e6;
+}
